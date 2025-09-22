@@ -13,7 +13,7 @@ When creating an application, JitAi will automatically generate a default organi
 
 In the element tree of the development area, find and expand `Organizational Structure` to see the system-generated `Default Organizational Structure`. After clicking on it, detailed configuration information will be displayed on the right side, supporting editing of the organizational structure name, setting the organization leader, and configuring whether to allow new users to register and join the organization. The application creator will automatically become the organization leader and have administrator role. For role permissions, refer to the [Role and Portal Menu Permissions Guide](./role-portal-menu-permissions).
 
-## Organizational Structure Creation {#organizational-structure-creation}
+## Creating Organizational Structure {#creating-organizational-structure}
 JitAi supports creating and managing multiple organizational structures within the same application, meeting complex management needs of enterprises with multiple business lines, cross-departments, or multiple subsidiaries. Developers can flexibly choose types such as Standard Organization, DingTalk Custom Organization, or WeChat Work Custom Organization based on actual scenarios, configuring different organizational structures, members, departments, and permission systems respectively. Each organizational structure is independent, supporting separate member management, department settings, and permission allocation, facilitating multi-tenant or multi-team collaboration. Through multi-organizational structure capabilities, enterprises can efficiently address challenges such as organizational expansion, business adjustments, and multi-platform integration, improving overall management efficiency and system flexibility.
 
 ![](./img/corp/organizational-structure-creation.png)
@@ -31,7 +31,7 @@ When creating an organizational structure, select Standard Organization to bring
 
 After filling in the configuration information, click `Confirm` to enter the visual editor for viewing.
 
-### Allow New Registered Users to Join {#allow-new-registered-user-join}
+### Allowing New Registered Users to Join {#allowing-new-registered-user-join}
 When creating a standard organizational structure, the system will display the `Allow New Registered Users to Join` checkbox, which is checked by default. When checked, new registered users can directly join the organizational structure, facilitating rapid member expansion and management.
 
 ## DingTalk Custom Organization {#dingtalk-custom-organization}
@@ -107,14 +107,14 @@ JitAi provides a contact management page where you can view department, member, 
 
 Developers can enter the management area and click `Contacts` in the left sidebar to see the organizational structure management panel on the right side.
 
-### Set Organization Leader {#set-organization-leader}
+### Setting Organization Leader {#setting-organization-leader}
 In organizational structure management, you can set a leader for each organization to clarify management responsibilities. Setting a leader helps quickly locate key contacts in scenarios such as contact management and approvals, improving organizational management efficiency.
 
 ![](./img/corp/set-organization-manager.gif)
 
 Each organizational structure supports setting a leader. After clicking the `Set Organization Leader` button, a `Select User` window will pop up. You can filter from all members, select by department or role, or directly choose yourself as the leader for quick selection.
 
-### Department Member Search {#department-member-search}
+### Searching Department Members {#searching-department-members}
 To facilitate efficient management and member location, the system supports quick search for specific departments or members within the organizational structure. Regardless of the number of members, target objects can be quickly found.
 
 ![](./img/corp/search-members-departments.png)
@@ -126,33 +126,33 @@ Standard Organization Contacts is used to centrally display and manage enterpris
 
 ![](./img/corp/standard-organization-operations.gif)
 
-### Create Department {#create-department}
+### Creating Department {#creating-department}
 In the `Organizational Structure` tab of Standard Organization, developers can create new departments based on actual business needs, flexibly building multi-level organizational hierarchy structures for enterprises. Support setting names, parent departments, and other information for each department, facilitating subsequent management and adjustments.
 
-### Add Member {#add-member}
+### Adding Member {#adding-member}
 Supports adding new members under specified departments. When adding, you can fill in detailed information such as member names, employee IDs, contact information, positions, etc., facilitating unified member management and subsequent maintenance for enterprises.
 
-### Import Members {#import-member}
+### Importing Members {#importing-members}
 Supports batch import functionality for one-time entry of large amounts of member information. You can download template files, fill them out as required and upload them. The system will automatically validate and import data, significantly improving member entry efficiency, suitable for initial enterprise setup or large-scale member change scenarios.
 
-### Export Members {#export-member}
+### Exporting Members {#exporting-members}
 Supports exporting current department or entire organization member information to Excel and other file formats, facilitating data backup, analysis statistics, or integration with third-party systems. You can choose to export all members or selected members as needed.
 
-### Adjust Department {#adjust-department}
+### Adjusting Department {#adjusting-department}
 Supports various department adjustment operations, including department renaming, moving to other parent departments, merging multiple departments, etc., meeting the needs of dynamic changes in enterprise organizational structure. All adjustment operations will be synchronized to the contacts in real-time, ensuring data consistency.
 
-### Member Resignation {#member-resignation}
+### Processing Member Resignation {#processing-member-resignation}
 Member status can be set to resigned. Resigned members will be automatically removed from contacts and related permissions, ensuring the accuracy of organizational member information and system security. Supports batch operations, facilitating centralized processing of resigned members for enterprises.
 
 ![](./img/corp/standard-organization-role-operations.gif)
 
-### Create Role {#create-role}
+### Creating Role {#creating-role}
 In the role management panel, developers can create new roles based on enterprise organizational structure department positions to subdivide member responsibilities. For example, R&D Manager, Procurement Specialist, etc.
 
-### Create Role Group {#create-role-group}
+### Creating Role Group {#creating-role-group}
 Supports creating new role groups to manage multiple related roles in groups, providing unified management of similar roles.
 
-### Manage Role Members {#manage-role-member}
+### Managing Role Members {#managing-role-members}
 Members can be flexibly added to or removed from roles, with batch operation support, facilitating enterprises to timely adjust member roles based on position changes.
 
 ## DingTalk Organization Contacts {#dingtalk-organization-contacts}
@@ -162,10 +162,10 @@ In daily enterprise management, many companies choose to maintain and manage the
 
 In the contacts panel of the administrator portal, after switching to the `Organizational Structure` tab, developers can perform the following operations:
 
-### Sync DingTalk Organization Structure {#sync-dingtalk-organization-structure}
+### Syncing DingTalk Organization Structure {#syncing-dingtalk-organization-structure}
 Click the `Sync` button to synchronize the latest department, member, and other organizational information from the DingTalk backend to the JitAi platform with one click, ensuring that the organizational structure on the platform remains consistent with DingTalk. During synchronization, the system will automatically validate and update existing data, avoiding duplication and omission, ensuring data timeliness and accuracy.
 
-### Export Members {#export-member-dingtalk}
+### Exporting Members {#exporting-members-dingtalk}
 Supports exporting current organization member information to Excel and other common file formats, facilitating data backup, analysis statistics, or integration with third-party systems. You can choose to export all members or selected members as needed, meeting data processing requirements in different scenarios.
 
 :::tip
@@ -179,10 +179,10 @@ Many enterprises also choose to maintain organizational structure on the WeChat 
 
 In the contacts panel of the administrator portal, after switching to the `Organizational Structure` tab, developers can perform the following operations:
 
-### Sync WeChat Work Organization Structure {#sync-wechat-work-organization-structure}
+### Syncing WeChat Work Organization Structure {#syncing-wechat-work-organization-structure}
 Click the `Sync` button to synchronize the latest department, member, and other organizational information from the WeChat Work backend to the JitAi platform with one click, ensuring that the organizational structure on the platform remains consistent with WeChat Work. During synchronization, the system will automatically validate and update existing data, avoiding duplication and omission, ensuring data timeliness and accuracy. 
 
-### Export Members {#export-member-wechat-work}
+### Exporting Members {#exporting-members-wechat-work}
 Supports exporting current organization member information to Excel and other common file formats, facilitating data backup, analysis statistics, or integration with third-party systems. You can choose to export all members or selected members as needed, meeting data processing requirements in different scenarios. If members are selected, only the selected members will be exported; if no members are selected, all member information will be exported. 
 
 :::tip
